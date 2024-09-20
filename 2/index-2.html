@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сcылки и формы</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<header class='header'>
+		<div class='container'>
+
+			<div class='header_in'>
+				<div class='logo_name'>
+					<img src="Лого2.png" alt="lоgotip" class='logo-holder'>
+					<div class="logo_header">Mulia</div>
+				</div>
+
+				<nav class='name'>
+					<a href='#hyperlinks' class='nav_link'>HYPERLINKS</a>
+					<a href='#tab' class='nav_link'>TABLE</a>
+					<a href='#form' class='nav_link'>FORM</a>
+				</nav>
+
+			</div>
+		</div>
+
+	</header>
+
+	<main class='main_baza'>
+		<div class='hyperlinksd'>
+
+			<h2 id='hyperlinks'>Список гиперссылок</h2>
+			<ul>
+				<li>
+					<a href="http://kubsu.ru">Абсолютную гиперссылку на главную страницу сайта kubsu.ru.</a>
+				</li>
+
+				<li>
+					<a href="https://kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https.</a>
+				</li>
+
+				<li id='photo'>
+					<a href="https://petstory-info.ru/"><img src="image.jpg" alt='Изображение' height="100" width="120"></a>
+				</li>
+				<li>
+					<a href="#">Сокращенная ссылка на внутреннюю страницу.</a>
+				</li>
+				<li>
+					<a href="/">Сокращенную ссылку на главную страницу.</a>
+				</li>
+				<li>
+					<a href="#form">Ссылку на фрагмент текущей страницы.</a>
+				</li>
+				<li>
+					<a href="https://example.com?param1=true&param2=false&param3=true">Ссылку с тремя параметрами в URL.
+					</a>
+				</li>
+
+				<li><a href="https://example.com?id=354">Ссылка с параметром id.</a></li>
+
+				<li><a href="2_index.html">Относительная ссылка на страницу в текущем каталоге.</a></li>
+
+				<li><a href="./about.html">Относительная ссылка на страницу в каталоге about.</a></li>
+
+				<li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше.</a></li>
+
+				<li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше.</a></li>
+
+				<li>Эта<a href="./about">ссылка</a>контекстная.</li>
+
+				<li><a href="https://dnevnik-vampira.fans/#about-serial">Ссылка на фрагмент страницы стороннего сайта</a>
+				</li>
+
+				<li>
+					<img src="собака2.jpg" alt="dog" usemap="#dog-map" height="100" width="120">
+					<map name="dog-map">
+						<area shape="rect" coords="0,0,50,150" href="https://lapkins.ru" alt="Область 1">
+						<area shape="circle" coords="80,50,50" href="https://dogs-academia.ru" alt="Область 2">
+					</map>
+				</li>
+
+				<li><a href="">Ссылку с пустым href.</a></li>
+
+				<li><a>Ссылка без href.</a></li>
+
+				<li><a href="https://госавтоинспекция.рф/" rel="nofollow">Ссылка, запрещенная для поисковиков.</a></li>
+
+				<li><a href="https://www.sbtjapan.com/ru/" rel="noopener">Ссылка, запрещенная для индексации поисковиками;</a>
+				</li>
+
+				<li>
+					<ol>
+						<li><a href="https://science.nasa.gov/eyes/" title="Ссылка 1">Ссылка 1</a></li>
+						<li><a href="https://zenrus.ru/" title="Ссылка 2">Ссылка 2</a></li>
+						<li><a href="https://neal.fun/spend/" title="Ссылка 3">Ссылка 3</a></li>
+					</ol>
+				<li>
+					<a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Ссылку на файл на сервере FTP с авторизацией</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class='Tabled'>
+
+			<h2 id='tab'>Таблица</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Имя</th>
+						<th>Возвраст</th>
+						<th>Город</th>
+						<th>Место работы</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Ирина</th>
+						<th>43</th>
+						<th rowspan='2'>Белореченск</th>
+						<th>ЦРБ</th>
+					</tr>
+					<tr>
+						<th>Вячеслав</th>
+						<th>44</th>
+						<th>Фура Газе</th>
+					</tr>
+					<tr>
+						<th>Павел</th>
+						<th>29</th>
+						<th>Иркутск</th>
+						<th rowspan='2'>ПАОС "Сбербанк России"</th>
+					</tr>
+					<tr>
+						<th>Вовчик</th>
+						<th>25</th>
+						<th>Новокузнецк</th>
+					</tr>
+					<tr>
+						<th>Ольга</th>
+						<th rowspan='2'>56</th>
+						<th>Владивосток</th>
+						<th>Школа №46</th>
+					</tr>
+					<tr>
+						<th>Виталий</th>
+						<th>Москва</th>
+						<th>"Банк России"</th>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+		<div class='Formd'>
+
+			<form id="form">
+				<h2 id='zag_form'>Заполнение формы</h2>
+
+				<label for="user-fio">ФИО:</label><br>
+				<input id="user-fio" name="user-fio" type="text" placeholder='Ваше полное имя' required>
+				<br>
+				<label for="user-phone"> Номер телефона:</label><br>
+				<input id="user-phone" name="user-phone" type="tel" pattern="[0-9]{11}" placeholder='7 (999)999-99-99' required>
+				<br>
+				<label for="user-email"> Электронная почта</label><br>
+				<input id="user-email" name="user-email" type="email" placeholder='example@example.example' required>
+				<br>
+				<label for="data">Дата рождения:</label><br>
+				<input id="data" name="data" type="date" required>
+				<br>
+				<label>Ваш пол:</label><br>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Мужской</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Женский</label>
+				<br>
+				<label for="languages">Любимые языки программирования:
+					<select id="languages" name="languages" multiple required>
+						<option value="Pascal">Pascal</option>
+						<option value="C">C</option>
+						<option value="C++">C++</option>
+						<option value="JavaScript">JavaScript</option>
+						<option value="PHP">PHP</option>
+						<option value="Python">Python</option>
+						<option value="Java">Java</option>
+						<option value="Haskel">Haskel</option>
+						<option value="Clojure">Clojure</option>
+						<option value="Prolog">Prolog</option>
+						<option value="Scala">Scala</option>
+					</select>
+				</label>
+
+				<p>
+					<label for="Биография">Биография:</label>
+					<textarea id="Биография" name="Биография" rows="2" placeholder='Расскажите о себе' required></textarea>
+				</p>
+				<label for="agree"> с контрактом ознакомлен (а)</label>
+				<input id="agree" name="agree" type="checkbox" required>
+				<br>
+				<button type="submit" class='submit'> Сохранить</button>
+			</form>
+
+		</div>
+
+	</main>
+
+	<footer class='footer_end'>
+		<div class="end_z">(М)Матеркина Юлия</div>
+	</footer>
+
+</body>
+
+</html>

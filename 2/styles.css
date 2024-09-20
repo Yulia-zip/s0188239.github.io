@@ -1,0 +1,170 @@
+body {
+	background-color: #ffffff;
+	margin: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.header {
+	width: 100%;
+	background-color: rgb(95, 18, 110);
+	margin-bottom: 50px;
+}
+.container {
+	max-width: 960px;
+	height: 100px;
+	margin: 0 auto;
+}
+.header_in {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.nav_link {
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin-left: 50px;
+}
+.nav_link:first-child {
+	margin-right: 0;
+}
+.nav_link:hover {
+	color: rgb(0, 0, 0);
+	transition: all 0.15s ease-in;
+}
+.nav_link::after {
+	content: '';
+	display: block;
+	width: 0%;
+	height: 2px;
+	background-color: rgb(0, 0, 0);
+	margin: 0 auto;
+}
+.nav_link:hover::after {
+	width: 100%;
+	transition: width 0.3s ease-in;
+}
+.logo_name {
+	display: flex;
+}
+.logo-holder {
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	margin-top: 5px;
+	margin-left: 25px;
+}
+.logo_header {
+	font-size: 50px;
+	padding-top: 30px;
+	color: rgb(255, 254, 252);
+}
+
+.main_baza {
+	max-width: 960px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+}
+.hyperlinksd,
+.Tabled,
+.Formd {
+	justify-content: center;
+}
+.Tabled,
+.Formd,
+.hyperlinksd {
+	margin-top: 50px;
+}
+ul {
+	height: 700px;
+	font-size: 18px;
+	list-style: none;
+	text-align: center;
+}
+ol {
+	list-style: none;
+}
+[id*='hyperlinks'] {
+	text-align: center;
+}
+
+.Tabled {
+	height: 400px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 700px;
+	height: 300px;
+	margin: auto;
+}
+[id*='tab'] {
+	text-align: center;
+}
+
+th,
+td {
+	border: solid 1px #000;
+	padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(228, 159, 242);
+}
+tbody tr:nth-child(even) {
+	background-color: rgb(188, 141, 196);
+}
+
+.Formd {
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	border-radius: 50px;
+	background-color: rgb(202, 177, 213);
+}
+button {
+	width: 100px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	margin-left: 160px;
+	margin-top: 20px;
+	border-radius: 45px;
+	border: 2px solid black;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+.footer_end {
+	background-color: rgb(95, 18, 110);
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.end_z {
+	width: 960px;
+	color: #030303;
+	font-size: 25px;
+	font-weight: 800;
+
+	display: flex;
+	align-items: center;
+}
+input {
+	padding: 7px;
+	margin-bottom: 10px;
+}
