@@ -167,18 +167,6 @@ tbody tr:nth-child(even) {
 	border-radius: 50px;
 	background-color: rgb(202, 177, 213);
 }
-button {
-	border: none;
-	display: flex;
-	justify-content: center;
-	margin-left: 160px;
-	margin-top: 15px;
-	border-radius: 45px;
-	display: flex;
-	align-items: center;
-	padding: 15px 25px;
-	font-size: 14px;
-}
 
 footer {
 	display: flex;
