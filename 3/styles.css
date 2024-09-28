@@ -159,7 +159,7 @@ tbody tr:nth-child(even) {
 }
 
 .Formd {
-	padding: 20px;
+	padding: 25px;
 	height: 650px;
 	order: 5;
 	display: flex;
